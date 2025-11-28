@@ -1,0 +1,56 @@
+Sub Liavisos()
+
+    Dim ws As Worksheet
+    Dim ultimaFila As Long
+
+ ' Limpiar hoja TABLA
+
+    Set ws = ThisWorkbook.Sheets("Sheet1")
+
+    ultimaFila = ws.Cells(ws.Rows.Count, 1).End(xlUp).Row
+
+    If ultimaFila >= 2 Then
+
+        ws.Range("A2:C" & ultimaFila).ClearContents
+        ws.Range("A2:C" & ultimaFila).Interior.ColorIndex = xlNone
+
+    End If
+
+    ws.Range("A2:C30").Font.Name = "Calibri"
+    ws.Range("A2:C30").Font.Size = 11
+   
+End Sub
+
+Sub ImprimirAvisos()
+
+    Dim Ruta As String
+    Dim Archivo As String
+    Dim aviso As String
+    Dim ultimaFila As Long
+    Dim ws As Worksheet
+    Dim i As Long
+
+    Set ws = ThisWorkbook.Sheets("Sheet1")
+
+    ultimaFila = ws.Cells(ws.Rows.Count, 1).End(xlUp).Row
+
+    ' Carpeta donde están los archivos
+
+    Ruta = "Y:\Avisos\tiffiles\"
+
+    For i = 2 To ultimaFila
+
+ aviso = Trim(CStr(xlSheet.Cells(i, 1).Value)) 
+
+Archivo = Dir(Ruta & "*.*") 
+
+' Recorre todos los archivos 
+Do While Archivo <> "" 
+
+' Ejecuta el comando de impresión por defecto 
+Shell "cmd /c start /min """" /d """ & Ruta + aviso & ".pdf" & """ /b /wait """ & Archivo & """ /p", vbHide 
+Archivo = Dir Loop 
+
+Next
+
+End Sub

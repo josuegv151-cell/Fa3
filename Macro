@@ -35,22 +35,27 @@ Sub ImprimirAvisos()
     ultimaFila = ws.Cells(ws.Rows.Count, 1).End(xlUp).Row
 
     ' Carpeta donde están los archivos
-
     Ruta = "Y:\Avisos\tiffiles\"
 
-    For i = 2 To ultimaFila
+       For i = 2 To ultimaFila
 
- aviso = Trim(CStr(ws.Cells(i, 1).Value))
+    aviso = Trim(CStr(ws.Cells(i, 1).Value))
 
-Archivo = Dir(Ruta & "*.*") 
+    If aviso <> "" Then
 
-' Recorre todos los archivos 
-Do While Archivo <> "" 
+        ' Buscar solo el archivo que coincide con el nombre de la celda
+        Archivo = Ruta & aviso & ".pdf"
 
-' Ejecuta el comando de impresión por defecto 
-Shell "cmd /c start /min """" /d """ & Ruta + aviso & ".pdf" & """ /b /wait """ & Archivo & """ /p", vbHide 
-Archivo = Dir Loop 
+        If Archivo <> "" Then
 
-Next
+            Shell "cmd /c start """" /min /wait """ & Archivo & """ /p", vbHide
+        Else
+            MsgBox "No se encontró el archivo: " & Ruta & aviso & ".pdf"
+
+        End If
+
+    End If
+
+Next i
 
 End Sub

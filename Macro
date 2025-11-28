@@ -40,7 +40,7 @@ Sub ImprimirAvisos()
 
     For i = 2 To ultimaFila
 
- aviso = Trim(CStr(xlSheet.Cells(i, 1).Value)) 
+ aviso = Trim(CStr(ws.Cells(i, 1).Value))
 
 Archivo = Dir(Ruta & "*.*") 
 

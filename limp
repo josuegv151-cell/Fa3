@@ -1,0 +1,17 @@
+Sub Liavisos()
+
+    Dim ws As Worksheet
+
+    Dim ultimaFila As Long
+
+ ' Limpiar hoja TABLA
+
+    Set ws = ThisWorkbook.Sheets("Sheet1")
+
+    ultimaFila = ws.Cells(ws.Rows.Count, 1).End(xlUp).Row
+
+    ws.Range("A2:C30").Font.Name = "Calibri"
+
+    ws.Range("A2:C30").Font.Size = 11
+  
+End Sub

@@ -5,7 +5,7 @@ Macro en Excel capaz de encontrar archivos
 
 [Problema identificado]
 
-Se desperdiciaba mucho tiempo al abrir los archivos realacionados a la macro de uno en uno
+Se desperdiciaba mucho tiempo al buscar y abrir los archivos relacionados a la macro de uno en uno, de entre los miles que maneja la carpeta
 
 [Solucion]
 

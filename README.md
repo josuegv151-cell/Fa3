@@ -1,7 +1,7 @@
 # Fa3
 [Descripcion]
 
-Macro en Excel capas de encontrar archivos
+Macro en Excel capaz de encontrar archivos
 
 [Problema identificado]
 

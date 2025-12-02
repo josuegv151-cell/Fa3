@@ -9,7 +9,7 @@ Se desperdiciaba mucho tiempo al buscar y abrir los archivos relacionados a la m
 
 [Solucion]
 
-Con la macro ya los encuentra rapidamente y los abre, debido a la version de adobe, solo los abre no los envia a imprimir, se decidio hacer una macro conforme a las especificaciones de la empreza
+Con la macro ya se pueden encontrar rapidamente los archivos y abrirlos directamente, debido a la version de adobe, solo los abre no los envia a imprimir, se decidio hacer una macro conforme a las especificaciones de la empreza
 
 [Arquitectura](https://github.com/josuegv151-cell/Fa3/wiki/Arquitectura)
 

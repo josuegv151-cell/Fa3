@@ -17,6 +17,6 @@ Es una arquitectura monolitica, de uso local
 
 [Manual de instalacion](https://github.com/josuegv151-cell/Fa3/wiki/Manual)
 
-[Guia de usuario]
+[Guia de usuario](https://github.com/josuegv151-cell/Fa3/wiki/Guia)
 
 [Roadmap](https://github.com/josuegv151-cell/Fa3/wiki/Ruta)

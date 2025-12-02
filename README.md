@@ -16,5 +16,7 @@ Con la macro ya se pueden encontrar rapidamente los archivos y abrirlos directam
 Es una arquitectura monolitica, de uso local
 
 [Manual de instalacion](https://github.com/josuegv151-cell/Fa3/wiki/Manual)
+
 [Guia de usuario]
-[Roadmap]
+
+[Roadmap](https://github.com/josuegv151-cell/Fa3/wiki/Ruta)
